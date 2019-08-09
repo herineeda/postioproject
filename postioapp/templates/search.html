@@ -1,0 +1,19 @@
+ {% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+    
+   <div class="search">
+     
+     <form action="" method="GET" style="margin:20px 100px">
+            <input type="text" name="q" value="{{ q }}" class="form-control input-sm" placeholder="Search" aria-label="Search" style="width:300px;">
+            
+            <button class="btn btn-primary btn-sm" type="submit" value="Search" style="color:white;">Search</button>
+     </form>
+   </div>
+  </div>
+ </div>
+ 
+ {% endblock %}

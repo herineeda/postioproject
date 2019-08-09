@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!--<form class="signUp" id="signupForm">-->
+
+  
+    
+      
+        
+      
+<h1 class="signUpTitle">SIGN UP</h1>
+<br>
+</div>
+<form method="POST" action="{% url 'signup'%}" class="signUp" id="signupForm" style ="width:650px;">
+
+{% csrf_token %}
+<div class="row" float="left">
+
+Username:
+<input name="username" class="signUpInput" type="text" value="">
+<br>
+
+<div class="input-field col s6">
+First Name:
+<input name="first_name" class="signUpInput" type="text" value="">
+<br>
+</div>
+<div class="input-field col s6">
+Last Name:
+<input name="last_name" class="signUpInput" type="text" value="">
+</div>
+
+ 
+ <input name="email" class="signUpInput" type="email" value="" placeholder="type your email here">
+<br>
+
+<div class="input-field col s6">
+Password:
+<br>
+<input name="password1"  class="signUpInput" type="password" value="">
+<br>
+</div>
+<div class="input-field col s6">
+Confirm Password:
+<br>
+<input name="password2" class="signUpInput"  type="password" value="">
+<br>
+<br>
+</div>
+<input class="signUpButton" type="submit" value="SIGN UP">
+</form>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
